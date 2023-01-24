@@ -1,52 +1,4 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Caravan.Web</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Caravan.Web.styles.css" asp-append-version="true" />
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Caravan.Web</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - Caravan.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
-</body>
-</html>
+﻿
 <!DOCTYPE html>
 <html lang="en">
 	<!--begin::Head-->
@@ -63,7 +15,7 @@
 		<!--end::Fonts-->
 		<!--begin::Global Stylesheets Bundle(used by all pages)-->
 		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="~/css/site.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
 	</head>
 	<!--end::Head-->
@@ -2453,25 +2405,8 @@
 									<div class="card card-xxl-stretch">
 										<!--begin::Card body-->
 										<div class="card-body d-flex flex-column justify-content-between h-100">
-											<!--begin::Section-->
-											<div class="pt-12">
-												<!--begin::Title-->
-												<h3 class="text-dark text-center fs-1 fw-boldest line-height-lg">Kickstart
-												<br />First Application</h3>
-												<!--end::Title-->
-												<!--begin::Text-->
-												<div class="text-center text-gray-600 fs-5 fw-bold pt-4">Outlines keep you honest. They stoping you from amazing poorly about mega drive</div>
-												<!--end::Text-->
-												<!--begin::Action-->
-												<div class="text-center py-7 mb-18">
-													<a href="#" class="btn btn-primary fs-6 px-6" data-bs-toggle="modal" data-bs-target="#kt_modal_create_app">Create App</a>
-												</div>
-												<!--end::Action-->
-											</div>
-											<!--end::Section-->
-											<!--begin::Image-->
-											<div class="flex-grow-1 bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom card-rounded-bottom h-150px" style="background-image:url('assets/media/illustrations/user-welcome.png')"></div>
-											<!--end::Image-->
+									        @RenderBody()
+											
 										</div>
 										<!--end::Card body-->
 									</div>

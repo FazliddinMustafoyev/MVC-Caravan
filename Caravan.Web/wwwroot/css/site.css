@@ -561,7 +561,7 @@ progress {
 }
 
     .blockquote-footer::before {
-        content: "— ";
+        content: "ï¿½ï¿½";
     }
 
 .img-fluid {
@@ -39043,7 +39043,7 @@ a {
 }
 
 .breadcrumb-dot .breadcrumb-item:after {
-    content: "•";
+    content: "ï¿½";
 }
 
 .breadcrumb-separatorless .breadcrumb-item:after {
